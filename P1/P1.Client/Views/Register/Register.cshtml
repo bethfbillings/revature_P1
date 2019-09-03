@@ -2,21 +2,23 @@
     ViewData["Title"] = "Register";
 }
 
+@model P1.Client.Models.Register
+
 <div class="text-center">
     <h1 class="display-4">Please Register</h1>
-    <form method="post">
+    <form method="post" asp-action="RegisterNewUser" asp-controller="Register">
       <label for="email">E-Mail Address</label>
-      <input type="text" name="email" value=""/>
+      <input asp-for="email" type="text" name="email" value=""/>
       <br/>
       <label for="password">Password</label>
-      <input type="text" name="password" value=""/>
+      <input asp-for="password" type="text" name="password" value=""/>
       <br/>
       <label for="fname">First Name</label>
-      <input type="text" name="fname" value=""/>
+      <input asp-for="fname" type="text" name="fname" value=""/>
       <br/>
       <label for="lname">Last Name</label>
-      <input type="text" name="lname" value=""/>
+      <input asp-for="lname" type="text" name="lname" value=""/>
       <br/>
-      <input type="submit" value="Submit" onclick="RegisterNewUser"/>
+      <input type="submit" value="Submit" onclick="Index"/>
     </form>
 </div>

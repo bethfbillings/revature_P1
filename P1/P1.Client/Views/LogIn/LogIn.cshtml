@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Log In";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Please Log In</h1>
+    <form method="post">
+      <label for="email">E-Mail Address</label>
+      <input type="text" name="email" value=""/>
+      <br/>
+      <label for="password">Password</label>
+      <input type="text" name="password" value=""/>
+      <br/>
+      <input type="submit" value="Submit" onclick="LogInUser"/>
+    </form>
+</div>
